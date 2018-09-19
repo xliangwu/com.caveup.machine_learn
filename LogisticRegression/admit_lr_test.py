@@ -3,7 +3,7 @@
 # 在这边为方便，我们将训练集拷贝一份作为预测集（不包括 admin 列）
 import copy
 
-import pandas as pd
+import pandas_tutorials as pd
 from statsmodels.iolib.smpickle import load_pickle
 
 data = pd.read_csv("../data/lr-binary.csv")
