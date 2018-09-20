@@ -5,7 +5,7 @@ knowledge tools for machine learn, NLP
 >crawler
 >> 爬虫相关的脚本
 
-#依赖的包
+# 依赖的包
 1. pandas
 2. tensorflow
 3. numpy
@@ -13,5 +13,5 @@ knowledge tools for machine learn, NLP
 5. statsmodels
 6. bosonnlp
 
-#联系方式
+# 联系方式
 wuxueliang4596@163.com
