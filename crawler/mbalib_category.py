@@ -37,7 +37,7 @@ def category_crawler():
                 output.writerow(mbalib_level_1[i])
 
 
-def category_2_cralwer(url, data):
+def category_2_cralwer(url, data=[]):
     http_header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
     }
@@ -52,6 +52,12 @@ def category_2_cralwer(url, data):
         href = ele['href']
         text = ele.contents
         print(href, text)
+        if str(href).startswith("/wiki/Category"):
+            print(href, text)
+        elif str(href).startswith("/wiki/"):
+            data.append((href, text))
+        else:
+            print("Ignore", href, text)
 
 
 def csv_test():
