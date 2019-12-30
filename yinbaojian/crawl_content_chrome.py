@@ -18,7 +18,7 @@ def crawl_content(url):
         driver = webdriver.Chrome(chrome_options=chrome_options)
         driver.get(url)
         try:
-            element = WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located(
                     (By.CLASS_NAME, "MsoNormalTable"))
             )
