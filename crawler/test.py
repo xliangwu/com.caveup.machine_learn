@@ -1,2 +1,5 @@
-for i in range(1, 20):
-    print("第{}周\t".format(i))
+import time
+print(time.time())
+
+time_str = str(time.time())
+print(time_str)
